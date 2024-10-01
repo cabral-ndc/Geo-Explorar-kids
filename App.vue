@@ -1,5 +1,6 @@
 
-       <template>
+        
+    <template>
   <div>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -17,8 +18,8 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisr" aria-label="Pesquisr">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisr</button>
           </form>
         </div>
       </nav>
@@ -75,7 +76,7 @@ export default {
     },
     navegarEntrePaginas(direcao) {
       if (direcao === 'anterior' && this.paisSelecionado) {
-        const indice Pais = this.paises.indexOf(this.paisSelecionado);
+        const indicePais = this.paises.indexOf(this.paisSelecionado);
         if (indicePais > 0) {
           this.paisSelecionado = this.paises[indicePais - 1];
         }
